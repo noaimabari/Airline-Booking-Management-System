@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemberPage</title>
+</head>
+
+<body>
+    <h1 align = "center" style = 'color:cornflowerblue '> Welcome user !</h1>
+
+    <form method="POST" action="">  
+        <h2>Search for flights: </h2>
+        From <input type = "text" name = "from_location">
+        <br>
+        <br>
+        To <input type = "text", name = "to_location">
+        <br>
+        <br>
+        Date of Travel<input type = "date" name = "date_of_travel">
+        <br>
+        <br>
+        Type: 
+        <select name="type_of_ticket">
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+        </select>
+        <br><br>
+        <input type="submit" name="button" id="log" value="Search for flights"> 
+        <input type="submit" name="button" id="log" value="Order flights by cost">
+        <input type="submit" name="button" id="log" value="Order flights by duration"> 
+        <input type="submit" name="button" id="log" value="Search for flight with minimum fare">
+        <br>
+        <br>
+        Enter departure time range: <input type = text name = "start"> to <input type = "text" name = "stop">
+        <input type="submit" name="button" id="log" value="Find flights between given departure time"> 
+        <br><br>
+        Find flights by a particular airline (enter airline name): <input type = "text" name = "airline_name">
+        
+        <input type="submit" name="button" id="log" value="Search flights by this airline">
+        <br><br><input type="submit" name="button" id="log" value="Generate a report of fares by airlines">   
+        
+        <br>
+        <br>
+        <h2>Book a Flight: </h2>
+        Enter Flight number: <input type = "text" name = "flight number"><br><br>
+        Enter Date: <input type = "date" name = "date of flight"><br><br>
+        Enter UserID <input type = "text", name = "userid"><br><br>
+        <input type="submit" name="button" value="Book">   
+        
+        <br><br>
+        <h2>Retreive all bookings: </h2> 
+        Enter your Customer ID:  <input type = "text", name = "custID"> 
+        <input type="submit" name="button" id="log" value="Retreive my bookings">
+
+        <br><br>
+        <h2>Cancel a booking: </h2>
+        Enter Flight number: <input type = "text" name = "flight number"><br><br>
+        Enter Date: <input type = "date" name = "date of flight"><br><br>
+        Enter UserID <input type = "text", name = "userid"><br><br>
+        
+        <input type="submit" name="button" id="log" value="Cancel"> 
+        <br>
+        <br>
+
+    </form>
+</body>
+</html>
